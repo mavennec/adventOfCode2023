@@ -1,5 +1,5 @@
 #!/usr/bin/env python3 
-# Xdec_partY.py
+# template_Xdec_partY.py
 # author : Mael Avennec
 
 import sys
