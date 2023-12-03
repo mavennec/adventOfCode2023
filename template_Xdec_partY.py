@@ -4,8 +4,10 @@
 
 import sys
 
-def myFunction_partOne(file):
+def ZZZZ_partOne(file):
     """
+    ZZZZ enigma part one
+
     Args :
     file -- the input file
     
@@ -22,7 +24,7 @@ def myFunction_partOne(file):
 
 def main():
     arg1 = sys.argv[1]
-    print(myFunction(arg1))
+    print(ZZZZ_partOne(arg1))
 
 if __name__=="__main__":
     main()

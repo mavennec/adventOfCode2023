@@ -6,6 +6,8 @@ import sys
 
 def trebuchet_partOne(file):
     """
+    Trebuchet enigma part one
+
     Args :
     file -- the input file
     

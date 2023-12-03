@@ -6,6 +6,8 @@ import sys
 
 def cubeConundrum_partTwo(file):
     """
+    Cube conundrum enigma part two
+
     Args :
     file -- the input file
     
