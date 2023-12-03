@@ -4,7 +4,7 @@
 
 import sys
 
-def partOne(file):
+def myFunction_partOne(file):
     """
     Args :
     file -- the input file
