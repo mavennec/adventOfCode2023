@@ -32,7 +32,7 @@ Go to the project directory
 Go to the day directory
 
 ```bash
-  cd XXday_name-of-advent-challenge
+  cd XXdec
 ```
 
 Then, execute the python file with input text file as first argument
@@ -48,11 +48,13 @@ Then, execute the python file with input text file as first argument
 
 ```shell
 cd adventOfCode2023
-cd 1dec_trebuchet
+cd 1dec
 ./1dec_part1.py inputs/1dec_input.txt
 
-Output : 
-55123
+Output :
+# Day 1 - part 1
+----------------
+Result => 55123
 ```
 
 

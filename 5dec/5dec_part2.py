@@ -1,5 +1,4 @@
 #!/usr/bin/env python3 
-# 5dec_part2.py
 # author : Mael Avennec
 
 import sys
@@ -94,8 +93,11 @@ def remove_items(test_list, item):
     return test_list
 
 def main():
+    print('# Day 5 - part 2')
+    print('----------------')
     arg1 = sys.argv[1]
-    print(giveASeedAFertilisze_partTwo(arg1))
+    print('Result => {}'.format('TODO'))
+    #print(giveASeedAFertilisze_partTwo(arg1))
 
 if __name__=="__main__":
     main()

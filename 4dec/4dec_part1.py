@@ -1,5 +1,4 @@
 #!/usr/bin/env python3 
-# 4dec_part1.py
 # author : Mael Avennec
 
 import sys
@@ -20,10 +19,8 @@ def scratchcards_partOne(file):
     totalPoints=0
     while (line != '') : 
         line=line.replace('\n','')
-
         
         gamePoints=0
-
         card = line.split(':')
         numbers = card[1].split('|')
         gameNumbers = numbers[0].split(' ')
@@ -36,7 +33,7 @@ def scratchcards_partOne(file):
             if gameNumber in winningNumbers :
                 incrWinningNumbers+=1
             
-        if(incrWinningCard>0):
+        if(incrWinningNumbers>0):
             gamePoints=2**(incrWinningNumbers-1)
         totalPoints+=gamePoints
 
@@ -61,8 +58,10 @@ def remove_items(test_list, item):
     return test_list
 
 def main():
+    print('# Day 4 - part 1')
+    print('----------------')
     arg1 = sys.argv[1]
-    print(scratchcards_partOne(arg1))
+    print('Result => {}'.format(scratchcards_partOne(arg1)))
 
 if __name__=="__main__":
     main()

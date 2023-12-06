@@ -1,5 +1,4 @@
 #!/usr/bin/env python3 
-# 1dec_part2.py
 # author : Mael Avennec
 
 import sys
@@ -103,8 +102,10 @@ def checkIfDigitInString(string):
     return False
 
 def main():
+    print('# Day 1 - part 2')
+    print('----------------')
     arg1 = sys.argv[1]
-    print(trebuchet_partTwo(arg1))
+    print('Result => {}'.format(trebuchet_partTwo(arg1)))
 
 if __name__=="__main__":
     main()

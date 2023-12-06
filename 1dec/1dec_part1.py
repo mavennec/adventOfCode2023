@@ -1,5 +1,4 @@
 #!/usr/bin/env python3 
-# 1dec_part1.py
 # author : Mael Avennec
 
 import sys
@@ -59,8 +58,10 @@ def checkIfIsInteger(char):
 
 
 def main():
+    print('# Day 1 - part 1')
+    print('----------------')
     arg1 = sys.argv[1]
-    print(trebuchet_partOne(arg1))
+    print('Result => {}'.format(trebuchet_partOne(arg1)))
 
 if __name__=="__main__":
     main()

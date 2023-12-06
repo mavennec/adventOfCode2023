@@ -1,5 +1,4 @@
 #!/usr/bin/env python3 
-# 6dec_part2.py
 # author : Mael Avennec
 
 import sys
@@ -62,8 +61,10 @@ def remove_items(test_list, item):
     return test_list
 
 def main():
+    print('# Day 6 - part 2')
+    print('----------------')
     arg1 = sys.argv[1]
-    print(waitForIt_partTwo(arg1))
+    print('Result => {}'.format(waitForIt_partTwo(arg1)))
 
 if __name__=="__main__":
     main()

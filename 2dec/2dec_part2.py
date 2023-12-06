@@ -1,26 +1,24 @@
 #!/usr/bin/env python3 
-# 2dec_part1.py
 # author : Mael Avennec
 
 import sys
 
-def cubeConundrum_partOne(file):
+def cubeConundrum_partTwo(file):
     """
-    Cube conundrum enigma part one
+    Cube conundrum enigma part two
 
     Args :
     file -- the input file
     
     Return :
-    count -- the sum of ids
+    count -- the sum of powers
     """
-    bag = {'red':12, 'green':13, 'blue':14}
     f = open(file, "r")
     line=f.readline()
-    gamePossible=[]
+    gamePowers=[]
     while (line != '') : 
         line=line.replace('\n','')
-        isGamePossible=True
+        maximum={'red':0,'green':0,'blue':0}
         game = line.split(':')
         gameNumber=game[0].split('Game ')[1]
         sets = game[1].split(';')
@@ -30,20 +28,22 @@ def cubeConundrum_partOne(file):
                 currentCube = cube[1:].split(' ')
                 number=int(currentCube[0])
                 color=currentCube[1]
-                if(number > bag[color]):
-                    isGamePossible=False
-                    break
-        if(isGamePossible):
-            gamePossible.append(int(gameNumber))
-                
+                if(maximum[color]<number):
+                    maximum[color]=number
+
+        power=maximum['red']*maximum['green']*maximum['blue']
+        gamePowers.append(power)
+
         line = f.readline()
     f.close()
-    count = sum(gamePossible)
+    count = sum(gamePowers)
     return count
 
 def main():
+    print('# Day 2 - part 2')
+    print('----------------')
     arg1 = sys.argv[1]
-    print(cubeConundrum_partOne(arg1))
+    print('Result => {}'.format(cubeConundrum_partTwo(arg1)))
 
 if __name__=="__main__":
     main()

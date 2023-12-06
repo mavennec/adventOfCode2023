@@ -1,5 +1,4 @@
 #!/usr/bin/env python3 
-# 5dec_part1.py
 # author : Mael Avennec
 
 import sys
@@ -222,8 +221,10 @@ def remove_items(test_list, item):
 #     return current_map
 
 def main():
+    print('# Day 5 - part 1')
+    print('----------------')
     arg1 = sys.argv[1]
-    print(giveASeedAFertilisze_partOne(arg1))
+    print('Result => {}'.format(giveASeedAFertilisze_partOne(arg1)))
 
 if __name__=="__main__":
     main()

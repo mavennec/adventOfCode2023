@@ -1,5 +1,4 @@
 #!/usr/bin/env python3 
-# Xdec_partY.py
 # author : Mael Avennec
 
 import sys
@@ -25,8 +24,9 @@ def ZZZZ_partOne(file):
 
 def main():
     arg1 = sys.argv[1]
-    print('### Day X : ZZZZZ ###')
-    print(ZZZZ_partOne(arg1))
+    print('# Day X - part Y')
+    print('----------------')
+    print('Result => {}'.format(ZZZZ_partOne(arg1)))
 
 if __name__=="__main__":
     main()
