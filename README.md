@@ -1,5 +1,72 @@
-# adventOfCode2023
-Advent Of Code 2023
 
-Language : Python
-Author : Mael Avennec
+![Logo](advent-of-code-logo.png)
+
+
+# 🎄 Advent of Code 2023
+
+[Advent of Code](https://adventofcode.com) is an annual set of Christmas-themed computer programming challenges that follow an Advent calendar.
+
+
+## Prerequisite
+
+Check that `python3` is installed
+
+```bash
+  python3 -V
+```
+
+## Run Locally
+
+Clone the project [adventOfCode2023](https://github.com/mavennec/adventOfCode2023)
+
+```bash
+  git clone https://github.com/mavennec/adventOfCode2023.git
+```
+
+Go to the project directory
+
+```bash
+  cd adventOfCode2023
+```
+
+Go to the day directory
+
+```bash
+  cd XXday_name-of-advent-challenge
+```
+
+Then, execute the python file with input text file as first argument
+(make sure that you can execute `chmod +x ./XXdec_partY.py`)
+
+```bash
+  ./XXdec_partY.py inputs/XXdec_input.txt
+```
+
+
+
+## Usage/Examples
+
+```shell
+cd adventOfCode2023
+cd 1dec_trebuchet
+./1dec_part1.py inputs/1dec_input.txt
+
+Output : 
+55123
+```
+
+
+
+
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://devkopp.com/)
+
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mael-avennec-727013170/)
+
+[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/devkopp)
+
+
+## Authors
+
+- [@mavennec](https://www.github.com/mavennec)
+
