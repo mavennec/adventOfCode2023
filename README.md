@@ -42,6 +42,12 @@ Then, execute the python file with input text file as first argument
   ./XXdec_partY.py inputs/XXdec_input.txt
 ```
 
+If you want to run all days, execute the following line, from the project root
+
+```bash
+ ./run_all_days.sh
+```
+
 
 
 ## Usage/Examples
