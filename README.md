@@ -49,21 +49,18 @@ If you want to run all days, execute the following line, from the project root
 ```
 
 
-
 ## Usage/Examples
 
 ```shell
 cd adventOfCode2023
-cd 1dec
-./1dec_part1.py inputs/1dec_input.txt
+cd 01dec
+./01dec_part1.py inputs/01dec_input.txt
 
 Output :
 # Day 1 - part 1
 ----------------
 Result => 55123
 ```
-
-
 
 
 ## 🔗 Links
