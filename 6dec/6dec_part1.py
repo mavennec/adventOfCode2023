@@ -68,6 +68,7 @@ def remove_items(test_list, item):
 
 def main():
     print('# Day 6 - part 1')
+    print('----------------')
     arg1 = sys.argv[1]
     print('Result => {}'.format(waitForIt_partOne(arg1)))
 

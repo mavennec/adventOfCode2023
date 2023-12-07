@@ -8,6 +8,7 @@ challenge_days=(
     Scratchcards
     "If You Give A Seed A Fertilize"
     "Wait For It"
+    "Camel Cards"
 )
 
 for day in {1..25}
