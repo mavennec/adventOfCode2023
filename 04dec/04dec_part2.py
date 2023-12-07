@@ -3,6 +3,8 @@
 
 import sys
 
+from datetime import datetime
+
 def scratchcards_partTwo(file):
     """
     Scratchcards enigma part one
@@ -16,6 +18,8 @@ def scratchcards_partTwo(file):
     f = open(file, "r")
     line=f.readline()
     allCardsCopy={}
+    cardWinningNumbers={}
+
     while (line != '') : 
         line=line.replace('\n','')
 
@@ -25,6 +29,7 @@ def scratchcards_partTwo(file):
             allCardsCopy[cardNumber]+=1
         else :
             allCardsCopy[cardNumber]=1
+
         numbers = card[1].split('|')
         gameNumbers = numbers[0].split(' ')
         remove_items(gameNumbers,'')
@@ -33,13 +38,17 @@ def scratchcards_partTwo(file):
 
         j=0
         while j<allCardsCopy[cardNumber]:
-            incrWinningNumbers=0
-            for gameNumber in gameNumbers : 
-                if gameNumber in winningNumbers :
-                    incrWinningNumbers+=1
+
+            # Calculate the numbers of winning numbers
+            if (cardNumber not in cardWinningNumbers.keys()):
+                incrWinningNumbers=0
+                for gameNumber in gameNumbers : 
+                    if gameNumber in winningNumbers :
+                        incrWinningNumbers+=1
+                cardWinningNumbers[cardNumber]=incrWinningNumbers
             
             i=1
-            while i<=incrWinningNumbers : 
+            while i<=cardWinningNumbers[cardNumber] : 
                 if str(int(cardNumber)+i) in allCardsCopy.keys():
                     allCardsCopy[str(int(cardNumber)+i)]+=1
                 else :
