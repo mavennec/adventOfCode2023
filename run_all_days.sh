@@ -9,6 +9,8 @@ challenge_days=(
     "If You Give A Seed A Fertilize"
     "Wait For It"
     "Camel Cards"
+    "Haunted Wasteland"
+    "Mirage Maintenance"
 )
 
 for day in $(seq -f "%02g" 1 25)
